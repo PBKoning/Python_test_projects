@@ -14,6 +14,7 @@ PADDLE_SPEED = 5
 pygame.init()
 screen = pygame.display.set_mode(SCREEN_SIZE)
 pygame.display.set_caption("Paddle Game")
+pygame.mouse.set_visible(False) # Hide mouse cursor
 
 # Global variables
 running = True
@@ -33,6 +34,13 @@ class Paddle(pygame.sprite.Sprite):
         self.rect.x = int((SCREEN_WIDTH - self.width) / 2) # position sprite in middle of screen
         self.rect.y = SCREEN_HEIGHT - self.height - 5 # position sprite just above the bottom of the screen
     
+    def update(self):
+        
+        # Position paddle according to mouse position
+        mouse_pos = pygame.mouse.get_pos()
+        self.rect.x = mouse_pos[0]
+    
+
     # function to move to the right
     def moveRight(self, pixels):
         self.rect.x += pixels
@@ -60,10 +68,11 @@ while running:
     
     # Handle input of keys
     keys = pygame.key.get_pressed() 
-    if keys[pygame.K_LEFT]: # move left
-        player_paddle.moveLeft(PADDLE_SPEED)
-    if keys[pygame.K_RIGHT]: # move right
-        player_paddle.moveRight(PADDLE_SPEED)
+    # if keys[pygame.K_LEFT]: # move left
+    #     player_paddle.moveLeft(PADDLE_SPEED)
+    # if keys[pygame.K_RIGHT]: # move right
+    #     player_paddle.moveRight(PADDLE_SPEED)
+    
     if keys[pygame.K_q]: # quit game   
         running = False
 
