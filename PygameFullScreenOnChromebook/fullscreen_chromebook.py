@@ -1,5 +1,5 @@
 # How to run Pygame fullscreen on a Chromebook
-# Width and height need to match screen resolutiob to prevent an error
+# Width and height need to match screen resolution to prevent an error
 
 import pygame
 
