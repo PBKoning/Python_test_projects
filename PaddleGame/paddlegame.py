@@ -4,6 +4,7 @@ import pygame
 
 # Paddle object
 from paddle import Paddle
+from ball import Ball
 
 # Constants
 from constants import *
@@ -22,6 +23,8 @@ pygame.mouse.set_visible(False) # Hide mouse cursor
 all_sprites_list = pygame.sprite.Group()
 player_paddle = Paddle(RED, 50, 10)
 all_sprites_list.add(player_paddle)
+ball = Ball(RED, 10, 10, 50, 50, 0.75, 1.25)
+all_sprites_list.add(ball)
 
 # Gameloop
 while running:
