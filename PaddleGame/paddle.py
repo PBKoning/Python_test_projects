@@ -24,15 +24,3 @@ class Paddle(pygame.sprite.Sprite):
         self.rect.x = mouse_pos[0]
         if self.rect.x > (SCREEN_WIDTH - self.width):
             self.rect.x = SCREEN_WIDTH - self.width
-
-    # function to move to the right
-    def moveRight(self, pixels):
-        self.rect.x += pixels
-        if self.rect.x > (SCREEN_WIDTH - self.width):
-            self.rect.x = SCREEN_WIDTH - self.width
- 
-    # function to move to the left
-    def moveLeft(self, pixels):
-        self.rect.x -= pixels
-        if self.rect.x < 0:
-            self.rect.x = 0
