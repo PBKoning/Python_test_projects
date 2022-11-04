@@ -46,6 +46,17 @@ while running:
     if ball.y_speed > 0 and pygame.Rect.colliderect(paddle.rect, ball.rect):
         ball.y_speed *= -1
         snd_ball_hit.play()
+        
+        # Adjust x-speed according to where the ball hits the paddle.
+        x_speed_adjustment = (ball.rect.centerx - paddle.rect.centerx) / (paddle.width / 2)             
+        ball.x_speed += x_speed_adjustment * BALL_MAX_X_SPEED
+
+        # Limit the x-speed
+        if ball.x_speed > BALL_MAX_X_SPEED:
+            ball.x_speed = BALL_MAX_X_SPEED
+        if ball.x_speed < -1 * BALL_MAX_X_SPEED:
+            ball.x_speed = -1* BALL_MAX_X_SPEED            
+
     # Check if ball hits left or right 'wall'
     if ball.x < 0 or  ball.x > SCREEN_WIDTH - ball.width:
         ball.x_speed *= -1
