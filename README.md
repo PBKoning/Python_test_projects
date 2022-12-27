@@ -7,3 +7,5 @@ My space for some experiments with Python
 A simple paddlegame made with PyGame
 
 29-10-2022: Added an example of fullscreen PyGame on a Chromebook
+
+27-12-2022: Added a previous created project: password generator
