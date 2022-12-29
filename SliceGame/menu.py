@@ -6,7 +6,7 @@ class Menu:
 
         self.canvas = canvas
 
-        self.start_button = pygame.image.load("menu.png")
+        self.start_button = pygame.image.load(r'./SliceGame/menu.png')
         
         # Init coördinates of the image so it is centered
         w, h = canvas.get_size() # get width and height of canvas
