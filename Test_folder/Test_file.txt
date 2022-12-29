@@ -3,3 +3,5 @@ Testing with files and folders in Git from Vscode
 29-10-2022: adding some text from HP laptop
 
 27-12-2022: just a change to the textfile
+
+29-12-2022: added something to the textfile from a new laptop
