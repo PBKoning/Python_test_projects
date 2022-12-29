@@ -6,7 +6,7 @@ voetbalclubs = ("FC Groningen", "RKC Waalwijk", "FC Volendam", "Ajax", "Sparta R
                  "FC Twente", "PSV", "sc Heerenveen", "Vitesse", "Fortuna Sit.")
 
 
-r = requests.get("https://teletekst-data.nos.nl/webplus?p=841")
+r = requests.get("https://teletekst-data.nos.nl/webplus?p=818")
 soup = BeautifulSoup(r.content, "html.parser")
 #print(soup.prettify)
 
