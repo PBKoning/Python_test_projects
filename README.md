@@ -12,4 +12,4 @@ A simple paddlegame made with PyGame
 
 29-12-2022: Added a new gameproject, SliceGame, in the style of Fruit Ninja
 
-30-12-2022: moved SliceGame to a dedicated repository on GitHub (https://github.com/PBKoning/SliceGame)
+30-12-2022: Moved SliceGame to a dedicated repository on GitHub (https://github.com/PBKoning/SliceGame)
