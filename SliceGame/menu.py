@@ -12,9 +12,6 @@ class Menu:
         w, h = canvas.get_size() # get width and height of canvas
         self.start_button_x = (w/2) - (self.start_button.get_width()/2)
         self.start_button_y = (h/2) - (self.start_button.get_height()/2)
-
-        
-        print(w,h)
         
         # Init variable of start button rectangle
         self.start_button_rect = pygame. Rect(0,0,0,0)
