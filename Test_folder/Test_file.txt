@@ -7,3 +7,5 @@ Testing with files and folders in Git from Vscode
 29-12-2022: added something to the textfile from a new laptop
 
 07-10-2023: adding something
+
+26-11-2023: added some text
