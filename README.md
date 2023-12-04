@@ -13,3 +13,5 @@ A simple paddlegame made with PyGame
 29-12-2022: Added a new gameproject, SliceGame, in the style of Fruit Ninja
 
 30-12-2022: Moved SliceGame to a dedicated repository on GitHub (https://github.com/PBKoning/SliceGame)
+
+04-12-2023: Added the project Webbased ChatGPT control that uses pyautogy and pyperclip to control the webbased version of ChatGPT
